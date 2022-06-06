@@ -1,0 +1,63 @@
+apiVersion: v1
+entries:
+  mongodb:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 4.4.13
+    created: "2022-06-06T15:34:12.096888+07:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 4be2e1e40b97f7f75b2801d4ac2e7c13ebad9e8235354aa6ba14ae0e9844ab94
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/mongodb-11.2.0.tgz
+    version: 11.2.0
+  - apiVersion: v1
+    appVersion: 4.0.9
+    created: "2022-06-06T15:34:12.098215+07:00"
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: fca8353b535ff511ff53ce5c1a1e260cd94dd0e4883e235472ba088b45ae9f73
+    home: https://mongodb.org
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/mongodb-5.17.0.tgz
+    version: 5.17.0
+generated: "2022-06-06T15:34:12.088036+07:00"
