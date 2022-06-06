@@ -1,11 +1,177 @@
 apiVersion: v1
 entries:
+  elasticsearch:
+  - apiVersion: v1
+    appVersion: 7.17.3
+    created: "2022-06-06T16:06:03.516819+07:00"
+    description: Official Elastic helm chart for Elasticsearch
+    digest: 437a6bd248482b8eb663a1f63bee6c2f9d00c0d77abe90c5a86ca35631969608
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/elasticsearch-7.17.3.tgz
+    version: 7.17.3
+  - apiVersion: v1
+    appVersion: 6.2.4
+    created: "2022-06-06T16:06:03.513748+07:00"
+    description: KPC Elasticsearch Chart
+    digest: 2c58846a4fc705defc70df0faa5a179dfd7c178dfe9cc5d7e2735fe968d0788c
+    name: elasticsearch
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/elasticsearch-1.3.0.tgz
+    version: 1.3.0
+  filebeat:
+  - apiVersion: v1
+    appVersion: 7.17.3
+    created: "2022-06-06T16:06:03.518449+07:00"
+    description: Official Elastic helm chart for Filebeat
+    digest: d0da553dd4197a90324de1d0286bbfb4bab728d46e0088caab9754fc771a9bf9
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/beats.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: filebeat
+    sources:
+    - https://github.com/elastic/beats
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/filebeat-7.17.3.tgz
+    version: 7.17.3
+  generic-deployment:
+  - apiVersion: v1
+    created: "2022-06-06T16:06:03.519698+07:00"
+    description: KPC Generic Deployment Chart
+    digest: 53f2da1e842d9f0159d9d44126a9df22e7ec67a2868b5d724e268688b719bf18
+    name: generic-deployment
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/generic-deployment-1.8.0.tgz
+    version: 1.8.0
+  jenkins:
+  - apiVersion: v1
+    appVersion: lts
+    created: "2022-06-06T16:06:03.524053+07:00"
+    deprecated: true
+    description: DEPRECATED - Open source continuous integration server. It supports
+      multiple SCM tools including CVS, Subversion and Git. It can execute Apache
+      Ant and Apache Maven-based projects as well as arbitrary scripts.
+    digest: 47c5bbdb779b3296e8e180c1f44fddf3c4f4084a01de4c1a458117a54f20f5a4
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-jnlp-slave
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/jenkins-2.5.4.tgz
+    version: 2.5.4
+  kibana:
+  - apiVersion: v1
+    appVersion: 7.17.3
+    created: "2022-06-06T16:06:03.52499+07:00"
+    description: Official Elastic helm chart for Kibana
+    digest: 9deb957f8fcadd4a8a949da273f605e1146679929da1cad7ec45904f3e82bdde
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/kibana.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/kibana-7.17.3.tgz
+    version: 7.17.3
+  kube-prometheus-stack:
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+    apiVersion: v2
+    appVersion: 0.56.0
+    created: "2022-06-06T16:06:03.546894+07:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.7.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.1.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.26.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: 992db0c6af3951049dd3ab8d95847dc000efd110f866c73112eaf0087d4f6b33
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: andrew@quadcorps.co.uk
+      name: andrewgkew
+    - name: bismarck
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: kube-prometheus-stack@sisti.pt
+      name: GMartinez-Sisti
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/kube-prometheus-stack-35.0.3.tgz
+    version: 35.0.3
+  logstash:
+  - apiVersion: v1
+    appVersion: 7.17.3
+    created: "2022-06-06T16:06:03.547992+07:00"
+    description: Official Elastic helm chart for Logstash
+    digest: 8d090828ace9442fb2d64c1576474b422fd498b8eb56d33438e3bcc59e4fccb2
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/logstash.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: logstash
+    sources:
+    - https://github.com/elastic/logstash
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/logstash-7.17.3.tgz
+    version: 7.17.3
   mongodb:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 4.4.13
-    created: "2022-06-06T15:34:12.096888+07:00"
+    created: "2022-06-06T16:06:03.552956+07:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -35,9 +201,68 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/mongodb-11.2.0.tgz
     version: 11.2.0
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 4.4.1
+    created: "2022-06-06T16:06:03.559241+07:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 0.x.x
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: 9b6419411db366a9b25ef501d8b49b7d4ddfbb6abd590c0aa53ba0b69b598e8f
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mongodb
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    - https://mongodb.org
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/mongodb-9.3.1.tgz
+    version: 9.3.1
+  - apiVersion: v1
+    appVersion: 4.2.4
+    created: "2022-06-06T16:06:03.555442+07:00"
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: dfb016b60669cb93246aad69229ebaed66ae9cd82537aee9e819913ff6863810
+    home: https://mongodb.org
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/mongodb-7.8.8.tgz
+    version: 7.8.8
   - apiVersion: v1
     appVersion: 4.0.9
-    created: "2022-06-06T15:34:12.098215+07:00"
+    created: "2022-06-06T16:06:03.554098+07:00"
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -60,4 +285,117 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/mongodb-5.17.0.tgz
     version: 5.17.0
-generated: "2022-06-06T15:34:12.088036+07:00"
+  prometheus-adapter:
+  - apiVersion: v1
+    appVersion: v0.9.1
+    created: "2022-06-06T16:06:03.560138+07:00"
+    description: A Helm chart for k8s prometheus adapter
+    digest: 5cf2f32d1f950efa7804822a32918b32be0cf26195e5ca1f5e6b16126a431998
+    home: https://github.com/kubernetes-sigs/prometheus-adapter
+    keywords:
+    - hpa
+    - metrics
+    - prometheus
+    - adapter
+    maintainers:
+    - email: mattias.gees@jetstack.io
+      name: mattiasgees
+    - name: steven-sheehy
+    - email: hfernandez@mesosphere.com
+      name: hectorj2f
+    name: prometheus-adapter
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/kubernetes-sigs/prometheus-adapter
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/prometheus-adapter-3.3.0.tgz
+    version: 3.3.0
+  redis:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 6.2.6
+    created: "2022-06-06T16:06:03.570311+07:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 8293b6cb305aef29cc8aa38a428b1c4ff907e08be0a68280f63f087f41aa3533
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/redis-15.6.10.tgz
+    version: 15.6.10
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 6.0.9
+    created: "2022-06-06T16:06:03.562729+07:00"
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 3b697921f03bfe43aed12ad7c0a2d520c4fb3cb691ea4e53e681dccb3037e257
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/redis-11.2.3%202.tgz
+    version: 11.2.3
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 6.0.9
+    created: "2022-06-06T16:06:03.565274+07:00"
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 3b697921f03bfe43aed12ad7c0a2d520c4fb3cb691ea4e53e681dccb3037e257
+    home: https://github.com/bitnami/charts/tree/master/bitnami/redis
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    - http://redis.io/
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/redis-11.2.3.tgz
+    version: 11.2.3
+generated: "2022-06-06T16:06:03.512246+07:00"
