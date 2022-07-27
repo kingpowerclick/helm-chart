@@ -3,7 +3,7 @@ entries:
   apm-server:
   - apiVersion: v1
     appVersion: 7.9.3
-    created: 2022-06-20T11:57:33.310654+07:00
+    created: 2022-07-27T18:07:18.007938+07:00
     description: Official Elastic helm chart for Elastic APM Server
     digest: b66b636bef3835ff1857c468c96885e71a1407aa377042e7a1470de1322a3030
     home: https://github.com/elastic/helm-charts
@@ -22,7 +22,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v1
     appVersion: v1.4.0
-    created: 2022-06-20T11:57:33.309793+07:00
+    created: 2022-07-27T18:07:18.007032+07:00
     description: A Helm chart for cert-manager
     digest: 22e83a70b113bcaca33f11a0d883b170081e45bd00199be6dd8df1a3d3191d5e
     home: https://github.com/jetstack/cert-manager
@@ -42,7 +42,7 @@ entries:
     - https://kingpowerclick.github.io/helm-chart/package/cert-manager/cert-manager-v1.4.0.tgz
     version: v1.4.0
   - appVersion: v0.6.2
-    created: 2022-06-20T11:57:33.301136+07:00
+    created: 2022-07-27T18:07:17.997477+07:00
     description: A Helm chart for cert-manager
     digest: 3fd583ec4b5e92b4748d72d11b5ccf1f963babf67f8252e86a4bd28e85b62d5e
     home: https://github.com/jetstack/cert-manager
@@ -63,7 +63,7 @@ entries:
   elasticsearch:
   - apiVersion: v1
     appVersion: 7.17.3
-    created: 2022-06-20T11:57:33.312499+07:00
+    created: 2022-07-27T18:07:18.010287+07:00
     description: Official Elastic helm chart for Elasticsearch
     digest: 437a6bd248482b8eb663a1f63bee6c2f9d00c0d77abe90c5a86ca35631969608
     home: https://github.com/elastic/helm-charts
@@ -79,7 +79,7 @@ entries:
     version: 7.17.3
   - apiVersion: v1
     appVersion: 7.9.3
-    created: 2022-06-20T11:57:33.314214+07:00
+    created: 2022-07-27T18:07:18.01368+07:00
     description: Official Elastic helm chart for Elasticsearch
     digest: 853609052207a9e5f6e67b5f51525262376b4f6bdfb996ae2723ef94ecda536b
     home: https://github.com/elastic/helm-charts
@@ -94,8 +94,33 @@ entries:
     - https://kingpowerclick.github.io/helm-chart/package/elastic/elasticsearch-7.9.3.tgz
     version: 7.9.3
   - apiVersion: v1
+    appVersion: 7.4.1
+    created: 2022-07-27T18:07:18.011784+07:00
+    description: Official Elastic helm chart for Elasticsearch
+    digest: d4790d13df6c2ff2e7d49212bd8e44f4f47c3087d14b689721097485cdf7afc0
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/elastic/elasticsearch-7.4.1.tgz
+    version: 7.4.1
+  - apiVersion: v1
     appVersion: 6.2.4
-    created: 2022-06-20T11:57:33.310955+07:00
+    created: 2022-07-27T18:07:18.008613+07:00
+    description: KPC Elasticsearch Chart
+    digest: 9f3c9515b965f8c6925605efee1b6b4b6146a211922c69614c6ce193f25a6a3c
+    name: elasticsearch
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/elastic/elasticsearch-1.3.1.tgz
+    version: 1.3.1
+  - apiVersion: v1
+    appVersion: 6.2.4
+    created: 2022-07-27T18:07:18.008295+07:00
     description: KPC Elasticsearch Chart
     digest: 2c58846a4fc705defc70df0faa5a179dfd7c178dfe9cc5d7e2735fe968d0788c
     name: elasticsearch
@@ -105,7 +130,7 @@ entries:
   elasticsearch-curator:
   - apiVersion: v1
     appVersion: 5.7.6
-    created: 2022-06-20T11:57:33.314901+07:00
+    created: 2022-07-27T18:07:18.014361+07:00
     description: A Helm chart for Elasticsearch Curator
     digest: ecab0341db6a0894c96f45655064d33aec7ff7981ce36fa405f3cf77c208b0ab
     home: https://github.com/elastic/curator
@@ -128,7 +153,7 @@ entries:
   elasticsearch-exporter:
   - apiVersion: v1
     appVersion: 1.1.0
-    created: 2022-06-20T11:57:33.315529+07:00
+    created: 2022-07-27T18:07:18.015658+07:00
     description: Elasticsearch stats exporter for Prometheus
     digest: b1ebd073588423d8b8130b8ec7c1c9d949f7a428227c13bfbb2af5d8e5295d2b
     home: https://github.com/justwatchcom/elasticsearch_exporter
@@ -150,10 +175,31 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/elastic/elasticsearch-exporter-3.6.0.tgz
     version: 3.6.0
+  - apiVersion: v1
+    appVersion: 1.1.0
+    created: 2022-07-27T18:07:18.014922+07:00
+    description: Elasticsearch stats exporter for Prometheus
+    digest: cf479b5962829eae1398464902b13d97cad5580e875f121a0b3d74ed14c35da4
+    home: https://github.com/justwatchcom/elasticsearch_exporter
+    keywords:
+    - metrics
+    - elasticsearch
+    - monitoring
+    maintainers:
+    - email: sven.mueller@commercetools.com
+      name: svenmueller
+    - email: carlos@carlosbecker.com
+      name: caarlos0
+    name: elasticsearch-exporter
+    sources:
+    - https://github.com/justwatchcom/elasticsearch_exporter
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/elastic/elasticsearch-exporter-1.10.1.tgz
+    version: 1.10.1
   filebeat:
   - apiVersion: v1
     appVersion: 7.17.3
-    created: 2022-06-20T11:57:33.316256+07:00
+    created: 2022-07-27T18:07:18.016424+07:00
     description: Official Elastic helm chart for Filebeat
     digest: d0da553dd4197a90324de1d0286bbfb4bab728d46e0088caab9754fc771a9bf9
     home: https://github.com/elastic/helm-charts
@@ -169,7 +215,7 @@ entries:
     version: 7.17.3
   - apiVersion: v1
     appVersion: 7.9.3
-    created: 2022-06-20T11:57:33.316936+07:00
+    created: 2022-07-27T18:07:18.017134+07:00
     description: Official Elastic helm chart for Filebeat
     digest: c501c48d4201fe19a9b6b471e9f9316a0b3ba5ed8ff9e0ac5e02edf5442031ff
     home: https://github.com/elastic/helm-charts
@@ -186,7 +232,7 @@ entries:
   fluentd:
   - apiVersion: v1
     appVersion: v2.4.0
-    created: 2022-06-20T11:57:33.320577+07:00
+    created: 2022-07-27T18:07:18.021653+07:00
     description: A Fluentd Elasticsearch Helm chart for Kubernetes.
     digest: f77ce45253caa7e9b940269ced9594765c81094f9b45502c101a5898edd2a40b
     home: https://www.fluentd.org/
@@ -210,7 +256,7 @@ entries:
   fluentd-elasticsearch:
   - apiVersion: v1
     appVersion: 2.6.0
-    created: 2022-06-20T11:57:33.321573+07:00
+    created: 2022-07-27T18:07:18.022566+07:00
     description: A Fluentd Helm chart for Kubernetes with Elasticsearch output
     digest: 1df47d02f9c149b49b64d3ed2928962c57490f84fd59afe7ef49414aacba09c9
     engine: gotpl
@@ -239,7 +285,7 @@ entries:
   grafana:
   - apiVersion: v1
     appVersion: 6.4.2
-    created: 2022-06-20T11:57:33.323105+07:00
+    created: 2022-07-27T18:07:18.024684+07:00
     description: The leading tool for querying and visualizing time series and metrics.
     digest: 86df90946833faa9b23ddf9e13724085936fd4327436efcc0f2d3dcfdd4435a9
     engine: gotpl
@@ -259,10 +305,49 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/grafana/grafana-3.12.0.tgz
     version: 3.12.0
+  - appVersion: 5.3.1
+    created: 2022-07-27T18:07:18.023374+07:00
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: b232f834872cd904718fbabfd50b4288d79cf193b6075c63ffc854bd84fab9ee
+    engine: gotpl
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/grafana/grafana-1.17.2.tgz
+    version: 1.17.2
+  haproxy:
+  - apiVersion: v1
+    appVersion: 2.4.1
+    created: 2022-07-27T18:07:18.025625+07:00
+    description: A Helm chart for HAProxy on Kubernetes
+    digest: 53d65111db5ee59f354653e2c22da9052ca771a64b55ebd9627403dd9363dfc2
+    home: https://github.com/haproxytech/helm-charts/tree/main/haproxy
+    icon: http://www.haproxy.org/img/HAProxyCommunityEdition_60px.png
+    keywords:
+    - haproxy
+    kubeVersion: '>=1.12.0-0'
+    maintainers:
+    - email: dkorunic@haproxy.com
+      name: Dinko Korunic
+    name: haproxy
+    sources:
+    - http://www.haproxy.org/
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/haproxy/haproxy-1.5.0.tgz
+    version: 1.5.0
   influxdb:
   - apiVersion: v1
     appVersion: 1.7.6
-    created: 2022-06-20T11:57:33.323864+07:00
+    created: 2022-07-27T18:07:18.026553+07:00
     description: Scalable datastore for metrics, events, and real-time analytics.
     digest: 54ea88bbd9634074d52241a3d1815537abc7e0db9ac43d3039888c5ae645d6c1
     engine: gotpl
@@ -285,7 +370,7 @@ entries:
   jenkins:
   - apiVersion: v1
     appVersion: lts
-    created: 2022-06-20T11:57:33.327835+07:00
+    created: 2022-07-27T18:07:18.030446+07:00
     deprecated: true
     description: DEPRECATED - Open source continuous integration server. It supports
       multiple SCM tools including CVS, Subversion and Git. It can execute Apache
@@ -303,7 +388,7 @@ entries:
     - https://kingpowerclick.github.io/helm-chart/package/jenkins/jenkins-2.5.4.tgz
     version: 2.5.4
   - appVersion: lts
-    created: 2022-06-20T11:57:33.325388+07:00
+    created: 2022-07-27T18:07:18.02803+07:00
     description: Open source continuous integration server. It supports multiple SCM
       tools including CVS, Subversion and Git. It can execute Apache Ant and Apache
       Maven-based projects as well as arbitrary scripts.
@@ -329,7 +414,7 @@ entries:
   kibana:
   - apiVersion: v1
     appVersion: 7.17.3
-    created: 2022-06-20T11:57:33.317562+07:00
+    created: 2022-07-27T18:07:18.017732+07:00
     description: Official Elastic helm chart for Kibana
     digest: 9deb957f8fcadd4a8a949da273f605e1146679929da1cad7ec45904f3e82bdde
     home: https://github.com/elastic/helm-charts
@@ -345,7 +430,7 @@ entries:
     version: 7.17.3
   - apiVersion: v1
     appVersion: 7.9.3
-    created: 2022-06-20T11:57:33.318302+07:00
+    created: 2022-07-27T18:07:18.01908+07:00
     description: Official Elastic helm chart for Kibana
     digest: 046bd69aa2ec0c5318c8bec27dfa824bf6f57e8107b88e6af53b2cf06fa4ce83
     home: https://github.com/elastic/helm-charts
@@ -359,6 +444,38 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/elastic/kibana-7.9.3.tgz
     version: 7.9.3
+  - apiVersion: v1
+    appVersion: 7.4.1
+    created: 2022-07-27T18:07:18.018366+07:00
+    description: Official Elastic helm chart for Kibana
+    digest: 0d5b6f78eace60f5d3ca0795b91590d495a4b9561f39bf97e37fcdee692520fb
+    home: https://github.com/elastic/helm-charts
+    icon: https://helm.elastic.co/icons/kibana.png
+    maintainers:
+    - email: helm-charts@elastic.co
+      name: Elastic
+    name: kibana
+    sources:
+    - https://github.com/elastic/kibana
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/elastic/kibana-7.4.1.tgz
+    version: 7.4.1
+  kube-prometheus:
+  - apiVersion: v1
+    created: 2022-07-27T18:07:18.034602+07:00
+    description: Manifests, dashboards, and alerting rules for end-to-end Kubernetes
+      cluster monitoring.
+    digest: 03332275a2ed324c4e98870c3d011824e50297b107f6c6dfc02a5ad2f3a5c4b0
+    engine: gotpl
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: Giancarlo Rubio
+    name: kube-prometheus
+    sources:
+    - https://github.com/coreos/prometheus-operator
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/kube-prometheus-stack/kube-prometheus-0.0.105.tgz
+    version: 0.0.105
   kube-prometheus-stack:
   - annotations:
       artifacthub.io/links: |
@@ -369,7 +486,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.56.3
-    created: 2022-06-20T11:57:33.34447+07:00
+    created: 2022-07-27T18:07:18.054548+07:00
     description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
@@ -414,7 +531,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 0.56.0
-    created: 2022-06-20T11:57:33.383454+07:00
+    created: 2022-07-27T18:07:18.104892+07:00
     description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
       and Prometheus rules combined with documentation and scripts to provide easy
       to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
@@ -453,7 +570,7 @@ entries:
   kubed:
   - apiVersion: v1
     appVersion: v0.12.0
-    created: 2022-06-20T11:57:33.345102+07:00
+    created: 2022-07-27T18:07:18.055227+07:00
     description: Kubed by AppsCode - Kubernetes daemon
     digest: 00411772422b1eb3cfd96a933a2db904df725bf6fe7d4717e40b098ffb439e43
     home: https://github.com/appscode/kubed
@@ -470,7 +587,7 @@ entries:
   logstash:
   - apiVersion: v1
     appVersion: 7.17.3
-    created: 2022-06-20T11:57:33.319103+07:00
+    created: 2022-07-27T18:07:18.019902+07:00
     description: Official Elastic helm chart for Logstash
     digest: 8d090828ace9442fb2d64c1576474b422fd498b8eb56d33438e3bcc59e4fccb2
     home: https://github.com/elastic/helm-charts
@@ -486,7 +603,7 @@ entries:
     version: 7.17.3
   - apiVersion: v1
     appVersion: 7.9.3
-    created: 2022-06-20T11:57:33.319813+07:00
+    created: 2022-07-27T18:07:18.020808+07:00
     description: Official Elastic helm chart for Logstash
     digest: ac365bc8e2e5fb13508111f138c0cda49698f0dba1e7b5bc94c3238a1562e4a6
     home: https://github.com/elastic/helm-charts
@@ -503,7 +620,7 @@ entries:
   metallb:
   - apiVersion: v1
     appVersion: 0.8.1
-    created: 2022-06-20T11:57:33.345785+07:00
+    created: 2022-07-27T18:07:18.055792+07:00
     description: MetalLB is a load-balancer implementation for bare metal Kubernetes
       clusters
     digest: 5a6331d2f7f7aa4e453321cfc3136b67335ebcda65319d662eda5e5ea5872b6d
@@ -527,7 +644,7 @@ entries:
   mongo-express:
   - apiVersion: v2
     appVersion: 0.54.0
-    created: 2022-06-20T11:57:33.350553+07:00
+    created: 2022-07-27T18:07:18.059868+07:00
     description: Web-based MongoDB admin interface, written with Node.js and express
     digest: a96767f457baaf06ca54fc03fa175d4e1da23990eecda632a689c58a91312011
     home: https://github.com/mongo-express/mongo-express
@@ -544,7 +661,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.13
-    created: 2022-06-20T11:57:33.357103+07:00
+    created: 2022-07-27T18:07:18.067029+07:00
     description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
       it stores data in JSON-like documents. Automated scalability and high-performance.
       Ideal for developing cloud native applications.
@@ -572,7 +689,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 4.4.6
-    created: 2022-06-20T11:57:33.354164+07:00
+    created: 2022-07-27T18:07:18.063292+07:00
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -600,7 +717,7 @@ entries:
       category: Database
     apiVersion: v1
     appVersion: 4.4.1
-    created: 2022-06-20T11:57:33.363636+07:00
+    created: 2022-07-27T18:07:18.074878+07:00
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -627,7 +744,7 @@ entries:
     version: 9.3.1
   - apiVersion: v1
     appVersion: 4.2.4
-    created: 2022-06-20T11:57:33.36152+07:00
+    created: 2022-07-27T18:07:18.072604+07:00
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -652,8 +769,34 @@ entries:
     - https://kingpowerclick.github.io/helm-chart/package/mongodb/mongodb-7.8.8.tgz
     version: 7.8.8
   - apiVersion: v1
+    appVersion: 4.0.14
+    created: 2022-07-27T18:07:18.071197+07:00
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: d6ef14769faf2322e7759f2584184b8d2ffcb379823fde035014f9c1608bbc3e
+    engine: gotpl
+    home: https://mongodb.org
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/bitnami-docker-mongodb
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/mongodb/mongodb-7.7.0.tgz
+    version: 7.7.0
+  - apiVersion: v1
     appVersion: 4.0.12
-    created: 2022-06-20T11:57:33.360303+07:00
+    created: 2022-07-27T18:07:18.069703+07:00
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -679,7 +822,7 @@ entries:
     version: 7.2.9
   - apiVersion: v1
     appVersion: 4.0.9
-    created: 2022-06-20T11:57:33.358201+07:00
+    created: 2022-07-27T18:07:18.068334+07:00
     description: NoSQL document-oriented database that stores JSON-like documents
       with dynamic schemas, simplifying the integration of data in content-driven
       applications.
@@ -703,10 +846,32 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/mongodb/mongodb-5.17.0.tgz
     version: 5.17.0
+  mongodb-replicaset:
+  - apiVersion: v1
+    appVersion: "3.6"
+    created: 2022-07-27T18:07:18.076072+07:00
+    description: NoSQL document-oriented database that stores JSON-like documents
+      with dynamic schemas, simplifying the integration of data in content-driven
+      applications.
+    digest: ba70193f8be962116569d1ab4728915d9991954458f30b2db9d6b5c5b6788572
+    home: https://github.com/mongodb/mongo
+    icon: https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg
+    maintainers:
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    - email: ssheehy@firescope.com
+      name: steven-sheehy
+    name: mongodb-replicaset
+    sources:
+    - https://github.com/mongodb/mongo
+    - https://github.com/percona/mongodb_exporter
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/mongodb/mongodb-replicaset-3.11.5.tgz
+    version: 3.11.5
   nginx-ingress:
   - apiVersion: v1
     appVersion: 0.25.1
-    created: 2022-06-20T11:57:33.365197+07:00
+    created: 2022-07-27T18:07:18.078611+07:00
     description: An nginx Ingress controller that uses ConfigMap to store the nginx
       configuration.
     digest: 5fddd9db814b4e4112b3402aa77c1d87455ff636841b191487a7e180ec562320
@@ -727,10 +892,90 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/nginx-ingress/nginx-ingress-1.22.0.tgz
     version: 1.22.0
+  - appVersion: 0.20.0
+    created: 2022-07-27T18:07:18.077045+07:00
+    description: An nginx Ingress controller that uses ConfigMap to store the nginx
+      configuration.
+    digest: 17afcc2bb01d110acd20f6bd403ebc50e31e1d160b41d3312eeaa8f4b43e587d
+    engine: gotpl
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    maintainers:
+    - email: jack.zampolin@gmail.com
+      name: jackzampolin
+    - email: mgoodness@gmail.com
+      name: mgoodness
+    - email: chance.zibolski@coreos.com
+      name: chancez
+    name: nginx-ingress
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/nginx-ingress/nginx-ingress-0.29.1.tgz
+    version: 0.29.1
   postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v1
+    appVersion: 11.10.0
+    created: 2022-07-27T18:07:18.08704+07:00
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: 090f315d5008ff43544fd8a13c19f4ccda8fcf1c2921a6d80bef1d688ae92699
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/postgresql/postgresql-9.8.12.tgz
+    version: 9.8.12
   - apiVersion: v1
     appVersion: 11.7.0
-    created: 2022-06-20T11:57:33.367531+07:00
+    created: 2022-07-27T18:07:18.084305+07:00
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: eb9a0faf492b35402233fd541de68326043e5fc78736a2d284fdf214b91cc39a
+    engine: gotpl
+    home: https://www.postgresql.org/
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/postgresql/postgresql-8.8.0.tgz
+    version: 8.8.0
+  - apiVersion: v1
+    appVersion: 11.7.0
+    created: 2022-07-27T18:07:18.082416+07:00
     deprecated: true
     description: DEPRECATED Chart for PostgreSQL, an object-relational database management
       system (ORDBMS) with an emphasis on extensibility and on standards-compliance.
@@ -753,7 +998,7 @@ entries:
     version: 8.6.4
   - apiVersion: v1
     appVersion: 10.7.0
-    created: 2022-06-20T11:57:33.366233+07:00
+    created: 2022-07-27T18:07:18.080604+07:00
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
     digest: ed9e00563923888dea4cf56cd0ee26f7e97588560f529d0e5d64e45cd852db00
@@ -781,7 +1026,7 @@ entries:
   prometheus-adapter:
   - apiVersion: v1
     appVersion: v0.9.1
-    created: 2022-06-20T11:57:33.384191+07:00
+    created: 2022-07-27T18:07:18.10569+07:00
     description: A Helm chart for k8s prometheus adapter
     digest: 5cf2f32d1f950efa7804822a32918b32be0cf26195e5ca1f5e6b16126a431998
     home: https://github.com/kubernetes-sigs/prometheus-adapter
@@ -806,7 +1051,7 @@ entries:
   prometheus-blackbox-exporter:
   - apiVersion: v1
     appVersion: 0.14.0
-    created: 2022-06-20T11:57:33.384778+07:00
+    created: 2022-07-27T18:07:18.106346+07:00
     description: Prometheus Blackbox Exporter
     digest: 6d53334b096930cd523752cf927c8a24720652b1f80d924a0271b3b9c1e01019
     home: https://github.com/prometheus/blackbox_exporter
@@ -825,10 +1070,31 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/prometheus/prometheus-blackbox-exporter-1.0.0.tgz
     version: 1.0.0
+  prometheus-mongodb-exporter:
+  - apiVersion: v1
+    appVersion: v0.10.0
+    created: 2022-07-27T18:07:18.106892+07:00
+    description: A Prometheus exporter for MongoDB metrics
+    digest: ca6663aee4bb51523c8559a7c1ddca4f44a94aceab5c7dd40044b355f3670772
+    home: https://github.com/percona/mongodb_exporter
+    keywords:
+    - exporter
+    - metrics
+    - mongodb
+    - prometheus
+    maintainers:
+    - email: ssheehy@firescope.com
+      name: steven-sheehy
+    name: prometheus-mongodb-exporter
+    sources:
+    - https://github.com/percona/mongodb_exporter
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/prometheus/prometheus-mongodb-exporter-2.4.0.tgz
+    version: 2.4.0
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.38.1
-    created: 2022-06-20T11:57:33.400438+07:00
+    created: 2022-07-27T18:07:18.122541+07:00
     deprecated: true
     description: DEPRECATED Provides easy monitoring definitions for Kubernetes services,
       and deployment and management of Prometheus instances.
@@ -851,7 +1117,7 @@ entries:
   prometheus-postgres-exporter:
   - apiVersion: v1
     appVersion: 0.8.0
-    created: 2022-06-20T11:57:33.401457+07:00
+    created: 2022-07-27T18:07:18.123714+07:00
     deprecated: true
     description: DEPRECATED A Helm chart for prometheus postgres-exporter
     digest: 986aab7c04ea92b90e1acd32c9e9eaa236085fb38047a278157b311fa8cf86ff
@@ -868,7 +1134,7 @@ entries:
     version: 1.3.1
   - apiVersion: v1
     appVersion: 0.4.7
-    created: 2022-06-20T11:57:33.401009+07:00
+    created: 2022-07-27T18:07:18.123183+07:00
     description: A Helm chart for prometheus postgres-exporter
     digest: ce128ff0cf5a63a94a189d78aaef5fb95105bef4a3a5d4d4ced9d2b40ddd29c9
     home: https://github.com/wrouesnel/postgres_exporter
@@ -888,7 +1154,7 @@ entries:
   prometheus-redis-exporter:
   - apiVersion: v1
     appVersion: 1.3.4
-    created: 2022-06-20T11:57:33.402004+07:00
+    created: 2022-07-27T18:07:18.124281+07:00
     deprecated: true
     description: DEPRECATED Prometheus exporter for Redis metrics
     digest: 8ce882fb75a2f47b59cdf768a40e1b2284139b1e55d14612310a3ccf1b49a8a9
@@ -907,7 +1173,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 6.2.6
-    created: 2022-06-20T11:57:33.409633+07:00
+    created: 2022-07-27T18:07:18.132555+07:00
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -934,7 +1200,7 @@ entries:
       category: Database
     apiVersion: v1
     appVersion: 6.0.9
-    created: 2022-06-20T11:57:33.406415+07:00
+    created: 2022-07-27T18:07:18.128862+07:00
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -960,7 +1226,7 @@ entries:
     version: 11.2.3
   - apiVersion: v1
     appVersion: 5.0.7
-    created: 2022-06-20T11:57:33.403811+07:00
+    created: 2022-07-27T18:07:18.126173+07:00
     deprecated: true
     description: DEPRECATED Open source, advanced key-value store. It is often referred
       to as a data structure server since keys can contain strings, hashes, lists,
@@ -979,10 +1245,35 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/redis/redis-10.5.7.tgz
     version: 10.5.7
+  - apiVersion: v1
+    appVersion: 4.0.14
+    created: 2022-07-27T18:07:18.133887+07:00
+    description: Open source, advanced key-value store. It is often referred to as
+      a data structure server since keys can contain strings, hashes, lists, sets
+      and sorted sets.
+    digest: 6e6c90a9d372742a565608f732f8b79f42291c063fc16994bfbe3d75f4e8ac80
+    engine: gotpl
+    home: http://redis.io/
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: redis
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/redis/redis-6.4.2.tgz
+    version: 6.4.2
   vault:
   - apiVersion: v1
     appVersion: 1.2.3
-    created: 2022-06-20T11:57:33.410425+07:00
+    created: 2022-07-27T18:07:18.134724+07:00
     description: A Helm chart for Vault, a tool for managing secrets
     digest: bfa9656d6d254abe37336d0506180cf6e2f945aa6b3b324f3d72da860324d866
     home: https://www.vaultproject.io/
@@ -999,4 +1290,24 @@ entries:
     urls:
     - https://kingpowerclick.github.io/helm-chart/package/vault/vault-0.23.0.tgz
     version: 0.23.0
-generated: 2022-06-20T11:57:33.298014+07:00
+  zookeeper:
+  - appVersion: 3.4.10
+    created: 2022-07-27T18:07:18.135427+07:00
+    description: Centralized service for maintaining configuration information, naming,
+      providing distributed synchronization, and providing group services.
+    digest: dca091609e1895fe550aad4fa63d1334f6f0f16a9a81d454438e90ad05e81fa4
+    home: https://zookeeper.apache.org/
+    icon: https://zookeeper.apache.org/images/zookeeper_small.gif
+    maintainers:
+    - email: lachlan.evenson@microsoft.com
+      name: lachie83
+    - email: owensk@google.com
+      name: kow3ns
+    name: zookeeper
+    sources:
+    - https://github.com/apache/zookeeper
+    - https://github.com/kubernetes/contrib/tree/master/statefulsets/zookeeper
+    urls:
+    - https://kingpowerclick.github.io/helm-chart/package/zookeeper/zookeeper-1.2.0.tgz
+    version: 1.2.0
+generated: 2022-07-27T18:07:17.994082+07:00
