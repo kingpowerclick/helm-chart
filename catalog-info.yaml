@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: helm-chart
+  annotations:
+    github.com/project-slug: kingpowerclick/helm-chart
+spec:
+  type: other
+  lifecycle: unknown
+  owner: admin
