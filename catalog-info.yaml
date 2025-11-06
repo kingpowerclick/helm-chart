@@ -3,6 +3,7 @@ kind: Component
 metadata:
   name: helm-chart
   annotations:
+    backstage.io/techdocs-ref: dir:.
     github.com/project-slug: kingpowerclick/helm-chart
 spec:
   type: other
